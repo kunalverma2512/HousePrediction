@@ -27,6 +27,20 @@ I combined the predictions of the 3 base models using the following mathematical
 This simple voting system helps reduce overfitting and improves generalization to unseen test data.
 
 ## How to Run the Code
-Navigate to the src directory and execute the python scripts.
-Run the preprocessing script to clean the raw data and save it to the processed folder.
-Then run the ensemble script to train the 3 models, blend their predictions, and generate the final submission file in the submissions folder.
+Follow these exact terminal commands to execute the pipeline on your local machine:
+
+```bash
+# Install the required dependencies
+pip install -r requirements.txt
+
+# Navigate to the source code directory
+cd src
+
+# Run the preprocessing script to clean the raw data
+python3 preprocess_data.py
+
+# Train the models and generate the final predictions
+python3 train_ensemble.py
+```
+
+The final prediction file will be automatically generated and saved in the submissions folder.
